@@ -1,0 +1,21 @@
+body {
+    display: flex;  
+    justify-content: center;  
+    align-items: center;      
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 320px; 
+    box-sizing: border-box;
+}
+
+.container div {
+    box-sizing: border-box;
+}
+
+.aloha.highlighted {
+    background: #6393f0;  
+}
