@@ -1,4 +1,8 @@
-// Create 16 div by 16 div
+// TODO
+// limit the genDiv num and make the button!
+
+let num = prompt("Enter the dimensions you want for the grid: ", "16");
+
 
 function genDiv(num) {
     const container = document.querySelector(".container");
@@ -7,12 +11,12 @@ function genDiv(num) {
             const div = document.createElement("div");
             div.style.border = "1px solid black";
             div.className = "aloha";
-            const size = 320 / num;
+            const size = 960 / num;
             div.style.width = `${size}px`; 
             div.style.height = `${size}px`;
 
             div.addEventListener("mouseenter", () => {
-                div.classList.toggle("highlighted");
+                div.classList.add("highlighted");
             });
 
             container.appendChild(div);
@@ -20,5 +24,9 @@ function genDiv(num) {
     }
 }
 
-genDiv(16);
+num = Number(num);
+if (num > 100) {
+    num = 100;
+}
+genDiv(Number(num));
 
