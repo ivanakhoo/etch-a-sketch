@@ -1,3 +1,3 @@
 # Etch-A-Sketch Project
 
-More practice with JS, CSS, and HTML!
+Etch-A-Sketch created with JavaScript, HTML, and CSS for practice.
